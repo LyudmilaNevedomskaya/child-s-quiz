@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img class="top-img" src="/img/clever.png" alt="clever guy" width="150" />
+
+      <div id="greeting" class="greeting">
+        <p>Hello my friend!</p>
+        <p>What is your name?</p>
+        <input
+          id="user-name"
+          type="text"
+          placeholder="Enter your name here..."
+        />
+        <div>
+          <label for="cars">How many questions you want to answer:</label>
+          <select name="questions-choose" id="questions-choose">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="finish-success" class="finish-success hide"></div>
+      <div id="finish-failed" class="finish-failed hide"></div>
+
+      <button id="start" class="start">Start a quiz</button>
+
+      <div id="question-field" class="question-field hide">
+        <p id="question" class="question"></p>
+        <form id="form" class="q-Form" onsubmit="return enteredData()">
+          <div>
+            <input type="radio" name="rads" id="input1" value="Bear" />
+            <label id="answ1">Bear</label>
+          </div>
+          <div>
+            <input type="radio" name="rads" id="input2" value="Dear" />
+            <label id="answ2">Dear</label>
+          </div>
+          <div>
+            <input type="radio" name="rads" id="input3" value="Mouse" />
+            <label id="answ3">Mouse</label>
+          </div>
+          <div>
+            <input type="radio" name="rads" id="input4" value="Snake" />
+            <label id="answ4">Snake</label>
+          </div>
+
+          <input class="submitBtn" type="submit" value="SUBMIT" />
+        </form>
+      </div>
+
+      <button id="show-answers" class="show-answers hide">Show answers</button>
+    </div>
+
+    <div class="congrats"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
