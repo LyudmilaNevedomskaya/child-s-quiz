@@ -59,7 +59,7 @@ h2 {
   cursor: text;
 }
 .num-of-questions {
-  color: beige;
+  color: rgb(243, 243, 232);
   margin-top: 25px;
   font-size: 20px;
 }
@@ -67,7 +67,7 @@ h2 {
   padding: 5px;
 }
 .container {
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,6 +90,16 @@ h2 {
   box-shadow: rgba(245, 245, 247, 0.87) 0px 50px 100px -20px,
     rgba(238, 233, 233, 0.726) 0px 30px 60px -30px;
 }
+.show-answers:hover, .hide-answers:hover {
+  background-color: rgb(20, 220, 110);
+  color: #002c40;
+  box-shadow: none;
+}
+.play-adain:hover {
+  background-color: yellow;
+  color: #002c40;
+  box-shadow: none;
+}
 .btn-container {
   display: flex;
   flex-wrap: wrap;
@@ -104,6 +114,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   background-color: #f77b0c;
+  background-color: #FF6F3C;
   color: whitesmoke;
   border: 3px solid black;
   border-radius: 5px;
@@ -135,7 +146,7 @@ h2 {
   cursor: pointer;
 }
 .finish-success {
-  background-color: rgb(90, 221, 14);
+  background-color: #65C18C;
 }
 .finish-failed {
   background-color: rgb(233, 86, 70);
@@ -144,6 +155,8 @@ h2 {
   background-color: beige;
   margin: 50px auto;
   width: 100%;
+  border-radius: 5px;
+  box-shadow: 3px 3px red, -1em 0 .4em olive;
 }
 .show-answers-container ul {
   padding: 0;
@@ -158,12 +171,60 @@ h2 {
   display: none;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
   .container {
-    margin-top: 50px;
+    width: 85%;
+  }
+}
+@media all and (max-width: 700px) {
+  .container {
+    margin-top: 30px;
+    width: 85%;
+  }
+  .btn-container {
+    gap: 15px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .container {
     width: 95%;
   }
   .question-field {
     width: 90%;
+  }
+  .btn-container {
+    gap: 15px;
+  }
+  .start {
+    font-size: 18px;
+    margin: 40px auto;
+    padding: 15px;
+    width: 150px;
+  }
+  .show-answers-container {
+    margin: 40px auto;
+    width: 92%;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .question-field p {
+    font-size: 20px;
+  }
+  .btn-container {
+    gap: 15px;
+  }
+  .q-Form {
+    padding-left: 10px;
+  }
+  .submitBtn {
+    padding: 10px 30px;
+  }
+  .start {
+    margin: 0 auto 20px;
+  }
+  .finish-failed, .finish-success {
+    width: 95%;
   }
 }
