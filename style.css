@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #002c40;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png");
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+body.start-background {
+  background-color: #002c40;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png");
+}
+body.win-background {
+  background-image: url(/img/realistic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body.lose-background {
+  background-image: url(img/sad2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+input {
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+}
+.top-img {
+  margin-bottom: 30px;
+}
+.greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto 80px;
+}
+.greeting p {
+  margin: 0;
+  padding-bottom: 10px;
+  color: beige;
+  font-size: 35px;
+}
+.greeting input {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: text;
+}
+.num-of-questions {
+  color: beige;
+  margin-top: 25px;
+  font-size: 20px;
+}
+.num-of-questions select {
+  padding: 5px;
+}
+.container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.start {
+  font-size: 25px;
+  margin: 40px auto;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.start:hover {
+  background-color: #019944;
+  color: whitesmoke;
+  transition: all 1s ease-in;
+  box-shadow: rgba(245, 245, 247, 0.87) 0px 50px 100px -20px,
+    rgba(238, 233, 233, 0.726) 0px 30px 60px -30px;
+}
+.question-field,
+.finish-success,
+.finish-failed {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f77b0c;
+  color: whitesmoke;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin: 40px auto;
+  font-size: 20px;
+}
+.question {
+  color: whitesmoke;
+  font-weight: 900;
+  margin-top: 0;
+  font-size: 29px;
+  text-align: center;
+}
+.q-Form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 10px;
+}
+.submitBtn {
+  border: none;
+  background-color: #019944;
+  padding: 10px 90px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: beige;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.finish-success {
+  background-color: rgb(90, 221, 14);
+}
+.finish-failed {
+  background-color: rgb(233, 86, 70);
+}
+/* .congrats {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url(/congratulations.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+} */
+
+.hide {
+  display: none;
+}
+
+@media all and (max-width: 500px) {
+  .container {
+    margin-top: 50px;
+    width: 95%;
+  }
+  .question-field {
+    width: 90%;
+  }
+}
