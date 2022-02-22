@@ -158,5 +158,13 @@ const allQuestions = [
     answer3: 'Calgary',
     answer4: 'Ottawa',
     rightAnswer: 'ottawa'
-  }
+  },
+  {
+    question: 'What is the biggest ocean in a world?',
+    answer: 'The Pacific Ocean',
+    answer2: 'The Atlantic Ocean',
+    answer3: 'The Indian Ocean',
+    answer4: 'The Arctic Ocean',
+    rightAnswer: 'the pacific ocean'
+  },
 ];

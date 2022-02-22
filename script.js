@@ -56,9 +56,10 @@ start.addEventListener('click', () => {
     answers = [];
     //userAnswer.value = '';
     
-    for (let i = 0; i < selectValue; i++) {
+    do {
       arrayOfRandomQuestions();
-    };
+    } while (questions.length < selectValue);
+
     console.log(questions);
     question.innerText = questions[nextQuestion].question;
     radioAnswers();
@@ -162,9 +163,9 @@ function getRandomQuestion() {
 /////get array of random questions//////
 function arrayOfRandomQuestions() {
   const result = getRandomQuestion();
-
-  questions.push(allQuestions[result]);
-
+  if (!questions.includes(allQuestions[result])) {
+    questions.push(allQuestions[result]);
+  }
 }
 
 
