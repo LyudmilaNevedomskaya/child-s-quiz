@@ -24,6 +24,8 @@ const finishFailed = document.getElementById('finish-failed');
 const form = document.getElementById("form");
 const showAnswers = document.getElementById("show-answers");
 const playAgain = document.getElementById('play-again');
+const showAnswersContainer = document.getElementById('show-answers-container');
+const hideAnswers = document.getElementById('hide-answers');
 
 let nextQuestion = 0;
 let answers = [];
@@ -56,7 +58,7 @@ start.addEventListener('click', () => {
     questions = [];
     answers = [];
     //userAnswer.value = '';
-    
+
     do {
       arrayOfRandomQuestions();
     } while (questions.length < selectValue);
@@ -71,6 +73,22 @@ start.addEventListener('click', () => {
 //////PLAY AGAIN ////////////////////
 playAgain.addEventListener('click', () => {
   location.reload();
+});
+
+//////SHOW ANSWERS//////
+showAnswers.addEventListener('click', () => {
+  console.log('QUESTIONS', questions);
+  showAnswers.classList.add('hide');
+  hideAnswers.classList.remove('hide');
+  showAnswersContainer.classList.remove('hide');
+  showAnswersContainer.innerHTML = `<ul>${questions.map((item) => `<li>${item.question} - ${item.rightAnswer.toUpperCase()}</li>`).join('')}</ul>`
+});
+
+//////HIDE THE ANSWERS//////
+hideAnswers.addEventListener('click' , () => {
+  hideAnswers.classList.add('hide');
+  showAnswers.classList.remove('hide');
+  showAnswersContainer.classList.add('hide');
 })
 
 
