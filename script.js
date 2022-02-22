@@ -23,6 +23,7 @@ const finishSuccess = document.getElementById('finish-success');
 const finishFailed = document.getElementById('finish-failed');
 const form = document.getElementById("form");
 const showAnswers = document.getElementById("show-answers");
+const playAgain = document.getElementById('play-again');
 
 let nextQuestion = 0;
 let answers = [];
@@ -63,23 +64,14 @@ start.addEventListener('click', () => {
     console.log(questions);
     question.innerText = questions[nextQuestion].question;
     radioAnswers();
-    // userAnswer1.value = questions[nextQuestion].answer;
-    // userAnswer2.value = questions[nextQuestion].answer2;
-    // userAnswer3.value = questions[nextQuestion].answer3;
-    // userAnswer4.value = questions[nextQuestion].answer4;
-
-    // userAnswer1.checked = false;
-    // userAnswer2.checked = false;
-    // userAnswer3.checked = false;
-    // userAnswer4.checked = false;
-
-    // answ1.innerText = questions[nextQuestion].answer;
-    // answ2.innerText = questions[nextQuestion].answer2;
-    // answ3.innerText = questions[nextQuestion].answer3;
-    // answ4.innerText = questions[nextQuestion].answer4;
 
   }
 });
+
+//////PLAY AGAIN ////////////////////
+playAgain.addEventListener('click', () => {
+  location.reload();
+})
 
 
 //////QUIZ CYCLE//////
@@ -104,29 +96,14 @@ function enteredData() {
         <p>Your score is ${checkAnswers(answers)} from ${questions.length}!</p>
         <h2>Try again ${user}!!!</h2>`;
     }
-    start.classList.remove('hide');
+    showAnswers.classList.remove('hide');
+    playAgain.classList.remove('hide');
   } else {
     nextQuestion++;
     answers.push(boxvalue);
     question.innerText = questions[nextQuestion].question;
 
     radioAnswers();
-    // userAnswer1.value = questions[nextQuestion].answer;
-    // userAnswer2.value = questions[nextQuestion].answer2;
-    // userAnswer3.value = questions[nextQuestion].answer3;
-    // userAnswer4.value = questions[nextQuestion].answer4;
-
-    // userAnswer1.checked = false;
-    // userAnswer2.checked = false;
-    // userAnswer3.checked = false;
-    // userAnswer4.checked = false;
-
-    // answ1.innerText = questions[nextQuestion].answer;
-    // answ2.innerText = questions[nextQuestion].answer2;
-    // answ3.innerText = questions[nextQuestion].answer3;
-    // answ4.innerText = questions[nextQuestion].answer4;
-
-
   }
 
   //console.log(answers);

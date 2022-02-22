@@ -22,12 +22,14 @@ body.win-background {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: auto;
 }
 body.lose-background {
   background-image: url(img/sad2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: auto;
 }
 input {
   cursor: pointer;
@@ -86,6 +88,11 @@ h2 {
   transition: all 1s ease-in;
   box-shadow: rgba(245, 245, 247, 0.87) 0px 50px 100px -20px,
     rgba(238, 233, 233, 0.726) 0px 30px 60px -30px;
+}
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 .question-field,
 .finish-success,
