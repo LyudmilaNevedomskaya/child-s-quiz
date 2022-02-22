@@ -17,7 +17,7 @@ body.start-background {
   background-color: #002c40;
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png");
 }
-body.win-background {
+/* body.win-background {
   background-image: url(/img/realistic.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,7 @@ body.lose-background {
   background-size: cover;
   background-position: center;
   height: auto;
-}
+} */
 input {
   cursor: pointer;
 }
@@ -81,6 +81,7 @@ h2 {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 220px;
 }
 .start:hover {
   background-color: #019944;
@@ -139,17 +140,19 @@ h2 {
 .finish-failed {
   background-color: rgb(233, 86, 70);
 }
-/* .congrats {
+.show-answers-container {
+  background-color: beige;
+  margin: 50px auto;
   width: 100%;
-  height: 100vh;
-  margin: 0;
-  background-image: url(/congratulations.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: 10;
-} */
+}
+.show-answers-container ul {
+  padding: 0;
+}
+.show-answers-container li {
+  padding: 10px 30px;
+  list-style: none;
+  font-size: 20px;
+}
 
 .hide {
   display: none;

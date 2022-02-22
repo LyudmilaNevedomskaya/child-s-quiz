@@ -1,4 +1,5 @@
 const greeting = document.getElementById('greeting');
+const topImg = document.getElementById('top-img');
 const userName = document.getElementById('user-name');
 const start = document.getElementById('start');
 const questionField = document.getElementById('question-field');
@@ -81,7 +82,7 @@ showAnswers.addEventListener('click', () => {
   showAnswers.classList.add('hide');
   hideAnswers.classList.remove('hide');
   showAnswersContainer.classList.remove('hide');
-  showAnswersContainer.innerHTML = `<ul>${questions.map((item) => `<li>${item.question} - ${item.rightAnswer.toUpperCase()}</li>`).join('')}</ul>`
+  showAnswersContainer.innerHTML = `<ul>${questions.map((item) => `<li>${item.question} - <b>${item.rightAnswer.toUpperCase()}</b></li>`).join('')}</ul>`
 });
 
 //////HIDE THE ANSWERS//////
@@ -103,13 +104,15 @@ function enteredData() {
 
     if (checkAnswers(answers) === questions.length) {
       finishSuccess.classList.remove('hide');
-      document.body.className = 'win-background';
+      topImg.src = '/img/congratulation.png';
+      //document.body.className = 'win-background';
       finishSuccess.innerHTML = `
         <h2>CONGRATS ${user}, YOU WIN!!!</h2>
         <p>Your score is ${checkAnswers(answers)} from ${questions.length}!</p>`;
     } else if (checkAnswers(answers) !== questions.length) {
       finishFailed.classList.remove('hide');
-      document.body.className = 'lose-background';
+      topImg.src = '/img/sad.png';
+      //document.body.className = 'lose-background';
       finishFailed.innerHTML = `
         <p>Your score is ${checkAnswers(answers)} from ${questions.length}!</p>
         <h2>Try again ${user}!!!</h2>`;
