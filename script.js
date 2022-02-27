@@ -43,7 +43,7 @@ form.addEventListener('submit', handleForm);
 start.addEventListener('click', () => {
   /////user choose how many questions to answer 5,10,15 or 20////
   selectValue = selectQuestionChoose.options[selectQuestionChoose.selectedIndex].value;
-  console.log(selectValue);
+  //console.log(selectValue);
 
   user = userName.value.toUpperCase();
   if (user === '') {
@@ -64,7 +64,7 @@ start.addEventListener('click', () => {
       arrayOfRandomQuestions();
     } while (questions.length < selectValue);
 
-    console.log(questions);
+    //console.log(questions);
     question.innerText = questions[nextQuestion].question;
     radioAnswers();
 
@@ -78,12 +78,13 @@ playAgain.addEventListener('click', () => {
 
 //////SHOW ANSWERS//////
 showAnswers.addEventListener('click', () => {
-  console.log('QUESTIONS', questions);
+  //console.log('QUESTIONS', questions);
   showAnswers.classList.add('hide');
   hideAnswers.classList.remove('hide');
   showAnswersContainer.classList.remove('hide');
   showAnswersContainer.innerHTML = `<ul>${questions.map((item) => `<li>${item.question} - <b>${item.rightAnswer.toUpperCase()}</b></li>`).join('')}</ul>`
 });
+
 
 //////HIDE THE ANSWERS//////
 hideAnswers.addEventListener('click' , () => {
@@ -96,8 +97,9 @@ hideAnswers.addEventListener('click' , () => {
 //////QUIZ CYCLE//////
 function enteredData() {
   let boxvalue = form.elements['rads'].value.toLowerCase();
-  //console.log(boxvalue);
-
+  //console.log(typeof boxvalue);
+  
+  
   if (questions.length === (nextQuestion + 1)) {
     answers.push(boxvalue);
     questionField.classList.add('hide');
@@ -120,11 +122,16 @@ function enteredData() {
     showAnswers.classList.remove('hide');
     playAgain.classList.remove('hide');
   } else {
-    nextQuestion++;
-    answers.push(boxvalue);
-    question.innerText = questions[nextQuestion].question;
+    if (boxvalue === '') {
+      alert('Choose the answer')
+    } else {
 
-    radioAnswers();
+      nextQuestion++;
+      answers.push(boxvalue);
+      question.innerText = questions[nextQuestion].question;
+  
+      radioAnswers();
+    }
   }
 
   //console.log(answers);
@@ -154,7 +161,7 @@ function radioAnswers() {
 //////GET RANDOM QUESTION//////
 function getRandomQuestion() {
   const random = Math.floor(Math.random() * (allQuestions.length - 1));
-  console.log(random);
+  //console.log(random);
   return random;
 }
 
