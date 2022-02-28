@@ -152,7 +152,7 @@ const allQuestions = [
     rightAnswer: 'zeus'
   },
   {
-    question: 'What is the capital of canada?',
+    question: 'What is the capital of Canada?',
     answer: 'Vancouver',
     answer2: 'Toronto',
     answer3: 'Calgary',
@@ -166,5 +166,189 @@ const allQuestions = [
     answer3: 'The Indian Ocean',
     answer4: 'The Arctic Ocean',
     rightAnswer: 'the pacific ocean'
+  },
+  {
+    question: 'What land animal can open its mouth the widest?',
+    answer: 'Alligator',
+    answer2: 'Hippo',
+    answer3: 'Baboon',
+    answer4: 'Crocodile',
+    rightAnswer: 'hippo'
+  },
+  {
+    question: 'What is the largest animal on Earth?',
+    answer: 'The Blue Whale',
+    answer2: 'The African Hippo',
+    answer3: 'The giant squid',
+    answer4: 'The African elephant',
+    rightAnswer: 'the blue whale'
+  },
+  {
+    question: 'Why do snakes stick out their tongue?',
+    answer: 'To scare predators',
+    answer2: 'To “smell” the air',
+    answer3: 'To make a hissing sound',
+    answer4: 'To lick their prey',
+    rightAnswer: 'to “smell” the air'
+  },
+  {
+    question: "What's the biggest planet in our solar system?",
+    answer: 'Jupiter',
+    answer2: 'Saturn',
+    answer3: 'Neptune',
+    answer4: 'Mercury',
+    rightAnswer: 'jupiter'
+  },
+  {
+    question: 'Who was the first person to walk on the moon?',
+    answer: 'Buzz Aldrin',
+    answer2: 'Neil Armstrong',
+    answer3: 'Michael Collins',
+    answer4: 'Alan Shepard',
+    rightAnswer: 'neil armstrong'
+  },
+  {
+    question: "What's the force that makes objects fall to the ground?",
+    answer: 'Electromagnetism',
+    answer2: 'Gravity',
+    answer3: 'Nuclear force',
+    answer4: 'It is just called “The Force”',
+    rightAnswer: 'gravity'
+  },
+  {
+    question: "What kind of trees grow from acorns?",
+    answer: 'Hickory',
+    answer2: 'Maple',
+    answer3: 'Walnut',
+    answer4: 'Oak',
+    rightAnswer: 'oak'
+  },
+  {
+    question: "What is the hardest substance in our body?",
+    answer: 'Bones',
+    answer2: 'Hair',
+    answer3: 'Teeth',
+    answer4: 'Nails',
+    rightAnswer: 'teeth'
+  },
+  {
+    question: "How many bones are in the adult human body?",
+    answer: '106',
+    answer2: '206',
+    answer3: '347',
+    answer4: '505',
+    rightAnswer: '206'
+  },
+  {
+    question: "Where is the fastest muscle in the body?",
+    answer: 'The leg',
+    answer2: 'The arm',
+    answer3: 'The eye',
+    answer4: 'The fingers',
+    rightAnswer: 'the eye'
+  },
+  {
+    question: "What is the coldest place on Earth?",
+    answer: 'The North Pole',
+    answer2: 'Antarctica',
+    answer3: 'Siberia',
+    answer4: 'Cape Horn, South America',
+    rightAnswer: 'antarctica'
+  },
+  {
+    question: "What is the most important symbol in Chinese culture?",
+    answer: 'The dog',
+    answer2: 'The cat',
+    answer3: 'The monkey',
+    answer4: 'The dragon',
+    rightAnswer: 'the dragon'
+  },
+  {
+    question: "Where did the Olympics begin?",
+    answer: 'Ancient Rome',
+    answer2: 'Ancient Greece',
+    answer3: 'Medieval England',
+    answer4: 'Australia',
+    rightAnswer: 'ancient greece'
+  },
+  {
+    question: "What did the Wright Brothers successfully invent?",
+    answer: 'The computer',
+    answer2: 'The car',
+    answer3: 'The telephone',
+    answer4: 'The airplane',
+    rightAnswer: 'the airplane'
+  },
+  {
+    question: "Canada has ten provinces. Two have no coastline on any oceans. Alberta is one of them. Which is the other one?",
+    answer: 'Nova Scotia',
+    answer2: 'Saskatchewan',
+    answer3: 'Ontario',
+    answer4: 'British Columbia',
+    rightAnswer: 'saskatchewan'
+  },
+  {
+    question: "What continent is Canada located in?",
+    answer: 'North America',
+    answer2: 'South America',
+    answer3: 'Asia',
+    answer4: 'Australia',
+    rightAnswer: 'north america'
+  },
+  {
+    question: "What two colors are in the Canadian flag?",
+    answer: 'White and Blue',
+    answer2: 'White and Yellow',
+    answer3: 'White and Red',
+    answer4: 'Yellow and Blue',
+    rightAnswer: 'white and red'
+  },
+  {
+    question: "Which country does Canada share a border with?",
+    answer: 'Mexico',
+    answer2: 'France',
+    answer3: 'England',
+    answer4: 'USA',
+    rightAnswer: 'usa'
+  },
+  {
+    question: "How many provinces are there in Canada?",
+    answer: '9',
+    answer2: '10',
+    answer3: '11',
+    answer4: '12',
+    rightAnswer: '10'
+  },
+  {
+    question: "How many territories are there in Canada?",
+    answer: '2',
+    answer2: '3',
+    answer3: '4',
+    answer4: '5',
+    rightAnswer: '3'
+  },
+  {
+    question: "What's the noble animal to Canada?",
+    answer: 'Beaver',
+    answer2: 'Bear',
+    answer3: 'Bobcat',
+    answer4: 'Deer',
+    rightAnswer: 'beaver'
+  },
+  {
+    question: "Which of these is not a Canadian province?",
+    answer: 'New Brunswick',
+    answer2: 'Manitoba',
+    answer3: 'Alberta',
+    answer4: 'Nunavut',
+    rightAnswer: 'nunavut'
+  },
+  {
+    question: "What is the most widely recognized national symbol of Canada?",
+    answer: 'Bear',
+    answer2: 'Beaver',
+    answer3: 'Maple leaf',
+    answer4: 'Deer',
+    rightAnswer: 'maple leaf'
   },
 ];
