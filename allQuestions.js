@@ -351,4 +351,124 @@ const allQuestions = [
     answer4: 'Deer',
     rightAnswer: 'maple leaf'
   },
+  {
+    question: "Which is the only edible food that never goes bad?",
+    answer: 'Honey',
+    answer2: 'Milk',
+    answer3: 'Apple juice',
+    answer4: 'Cucumber',
+    rightAnswer: 'honey'
+  },
+  {
+    question: "Which country invented ice cream?",
+    answer: 'Canada',
+    answer2: 'France',
+    answer3: 'China',
+    answer4: 'Germany',
+    rightAnswer: 'china'
+  },
+  {
+    question: "What country has the most natural lakes?",
+    answer: 'Germany',
+    answer2: 'Russia',
+    answer3: 'USA',
+    answer4: 'Canada',
+    rightAnswer: 'canada'
+  },
+  {
+    question: "How many hearts does an octopus have?",
+    answer: '0',
+    answer2: '1',
+    answer3: '2',
+    answer4: '3',
+    rightAnswer: '3'
+  },
+  {
+    question: "The unicorn is the national animal of which country?",
+    answer: 'England',
+    answer2: 'Scotland',
+    answer3: 'Brazil',
+    answer4: 'Ireland',
+    rightAnswer: 'scotland'
+  },
+  {
+    question: "How many teeth does an adult human have?",
+    answer: '22',
+    answer2: '28',
+    answer3: '30',
+    answer4: '32',
+    rightAnswer: '32'
+  },
+  {
+    question: "What year was the very first model of the iPhone released?",
+    answer: '2005',
+    answer2: '2007',
+    answer3: '2009',
+    answer4: '2011',
+    rightAnswer: '2007'
+  },
+  {
+    question: "What is often seen as the smallest unit of memory?",
+    answer: 'Kilobyte',
+    answer2: 'Megabyte',
+    answer3: 'Gigabyte',
+    answer4: 'Terabyte',
+    rightAnswer: 'kilobyte'
+  },
+  {
+    question: "Who chose the name 'British Columbia'?",
+    answer: 'Princess Diana',
+    answer2: 'Prince Charles',
+    answer3: 'Queen Victoria',
+    answer4: 'Queen Elizabeth II',
+    rightAnswer: 'queen victoria'
+  },
+  {
+    question: "In which year did Canadian women win the right to vote in elections?",
+    answer: '1981',
+    answer2: '1921',
+    answer3: '1918',
+    answer4: '1930',
+    rightAnswer: '1921'
+  },
+  {
+    question: "When was Canada founded?",
+    answer: '20 July 1871',
+    answer2: '1 July 1921',
+    answer3: '20 July 1891',
+    answer4: '1 July 1867',
+    rightAnswer: '1 july 1867'
+  },
+  {
+    question: "Which Canadian city is the birthplace of ice hockey?",
+    answer: 'Montreal',
+    answer2: 'Alberta',
+    answer3: 'Toronto',
+    answer4: 'Winnipeg',
+    rightAnswer: 'montreal'
+  },
+  {
+    question: "How many time zones exist in Canada?",
+    answer: 'Three time zones',
+    answer2: 'Four time zones',
+    answer3: 'Five time zones',
+    answer4: 'Six time zones',
+    rightAnswer: 'six time zones'
+  },
+  {
+    question: "How many oceans does Canada border?",
+    answer: 'One',
+    answer2: 'Two',
+    answer3: 'Three',
+    answer4: 'Four',
+    rightAnswer: 'three'
+  },
+  {
+    question: "What is the name of the biggest bay in Canada?",
+    answer: 'Baffin Bay',
+    answer2: "Hudson Bay",
+    answer3: 'James Bay',
+    answer4: 'Frobisher Bay',
+    rightAnswer: "hudson bay"
+  },
 ];

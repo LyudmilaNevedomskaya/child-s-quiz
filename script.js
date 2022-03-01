@@ -116,7 +116,7 @@ function enteredData() {
       if (checkAnswers(answers) === questions.length - 1) {
         almostWinner.classList.remove('hide');
         topImg.src = '/img/almost.png';
-
+        topImg.classList.add('almost-winner-img');
         almostWinner.innerHTML = `
         <p>Your score is ${checkAnswers(answers)} from ${questions.length}!</p>
         <h2>You almost did it ${user}!!!</h2>`;

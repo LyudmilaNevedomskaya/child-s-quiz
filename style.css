@@ -155,6 +155,9 @@ h2 {
 .almost-winner {
   background-color: rgb(174, 184, 47);
 }
+.almost-winner-img {
+  width: 230px;
+}
 .show-answers-container {
   background-color: beige;
   margin: 50px auto;
