@@ -22,6 +22,7 @@ const answ4 = document.getElementById('answ4');
 //const rates = document.getElementById('rates');
 const finishSuccess = document.getElementById('finish-success');
 const finishFailed = document.getElementById('finish-failed');
+const almostWinner = document.getElementById('almost-winner');
 const form = document.getElementById("form");
 const showAnswers = document.getElementById("show-answers");
 const playAgain = document.getElementById('play-again');
@@ -112,12 +113,24 @@ function enteredData() {
         <h2>CONGRATS ${user}, YOU WIN!!!</h2>
         <p>Your score is ${checkAnswers(answers)} from ${questions.length}!</p>`;
     } else if (checkAnswers(answers) !== questions.length) {
-      finishFailed.classList.remove('hide');
-      topImg.src = '/img/sad.png';
-      //document.body.className = 'lose-background';
-      finishFailed.innerHTML = `
+      if (checkAnswers(answers) === questions.length - 1) {
+        almostWinner.classList.remove('hide');
+        topImg.src = '/img/almost.png';
+
+        almostWinner.innerHTML = `
         <p>Your score is ${checkAnswers(answers)} from ${questions.length}!</p>
-        <h2>Try again ${user}!!!</h2>`;
+        <h2>You almost did it ${user}!!!</h2>`;
+        
+      } else {
+        finishFailed.classList.remove('hide');
+        topImg.src = '/img/sad.png';
+        //document.body.className = 'lose-background';
+        finishFailed.innerHTML = `
+          <p>Your score is ${checkAnswers(answers)} from ${questions.length}!</p>
+          <h2>Try again ${user}!!!</h2>`;
+      }
+
+
     }
     showAnswers.classList.remove('hide');
     playAgain.classList.remove('hide');

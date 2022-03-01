@@ -107,7 +107,8 @@ h2 {
 }
 .question-field,
 .finish-success,
-.finish-failed {
+.finish-failed,
+.almost-winner {
   width: 80%;
   padding: 20px;
   display: flex;
@@ -150,6 +151,9 @@ h2 {
 }
 .finish-failed {
   background-color: rgb(233, 86, 70);
+}
+.almost-winner {
+  background-color: rgb(174, 184, 47);
 }
 .show-answers-container {
   background-color: beige;
